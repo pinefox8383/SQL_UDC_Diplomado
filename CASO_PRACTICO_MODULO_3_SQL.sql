@@ -54,7 +54,7 @@ utiliza los resultados obtenidos para llegar a estas conclusiones.*/
 
 --CONSULTAR LOS 5 PRODUCTOS ESTRELLA MÁS VENDIDOS----------
 	select item_name,count(item_id)  from order_details 
-	left join menu_items on item_id = menu_item_id
+	Left join menu_items on item_id = menu_item_id
 	group by item_name order by 2 desc LIMIT 5;
 	/*Punto Clave 1.- Incrementar y garantizar el insumo de ingredientes de estos platillos
                       ya que son los más solicitados
@@ -64,7 +64,7 @@ utiliza los resultados obtenidos para llegar a estas conclusiones.*/
 	*/		
 --CONSULTAR LAS CATEGORIAS/REGION DE PRODUCTOS MÁS VENDIDOS (SABORES DEL MUNDO QUE MAS HAN GUSTADO A LA GENTE)----------
 	select category,count(item_id)  from order_details 
-	left join menu_items on item_id = menu_item_id
+	join menu_items on item_id = menu_item_id
 	group by category order by 2 desc;
 	/*Punto Clave 4.- La Comida asiática es la de mayor preferencia por la gente proponer incrementar más el menú de esta 
 					  categoría e incrementar precios para maximizar ganancias
@@ -72,7 +72,7 @@ utiliza los resultados obtenidos para llegar a estas conclusiones.*/
 
 --ANALISIS DE VENTAS DE PLATILLOS "ASIATICOS"----------
 	select item_name,count(item_id)  from order_details 
-	left join menu_items on item_id = menu_item_id
+	Left join menu_items on item_id = menu_item_id 
 	WHERE category='Asian'
 	group by item_name 	
 	order by 2 desc;
@@ -82,8 +82,7 @@ utiliza los resultados obtenidos para llegar a estas conclusiones.*/
 
 --CONSULTAR LOS 5 PRODUCTOS MENOS VENDIDOS -----------
 	select item_name,price,count(item_id)  from order_details 
-	left join menu_items on item_id = menu_item_id
-	where not item_id is null
+	join menu_items on item_id = menu_item_id
 	group by item_id,item_name,price order by 3 ASC LIMIT 5;
 	/*Punto Clave 5.-Analizar/Revisar si la baja preferencia se debe a un problema de Sabor/Precio
 						o ver la posibilidad de quitar platillo del menú
