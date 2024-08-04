@@ -10,6 +10,7 @@ que han tenido más éxito y cuales son los que menos han gustado a los clientes
 ## Resultados del Análisis
 
 Se logró comprender el objetivo que se pretendía.
+
 Se realizó un análisis exploratorio de los datos contenidos en una base de datos sql con una tabla de menú y otra de ventas,
 se observó que el universo de registros de ventas analizadas comprende un periodo de 3 meses (Enero a Marzo del 2023)
 después se procedió a la realización de las consultas necesarias para obtener/contestar dichas interrogantes que nos ayudarán
