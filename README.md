@@ -18,7 +18,9 @@ a comprender el comportamiento de las mismas para la toma de deciciones en el re
 
 Se añade un archivo de extensión .sql con dichas consultas/análisis y la propuesta de 5 puntos clave que ayudarán a la toma de deciciones,
 concluyendo en resumen que:
+
 	* los 5 platillos estrella más vendidos son: Hamburger,Edamame,Korean Beef Bowl, Cheeseburger, French Fries
+ 
 	* los 5 platillos menos vendidos son: Chicken Tacos,Potstickers, Cheese Lasagna, Steak Tacos, Cheese Quesadillas
 
 Pero en general la comida Asiática es la de mayor preferencia por la gente.
