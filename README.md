@@ -1,4 +1,4 @@
-# Modulo 3 SQL - Caso Práctico - Diplomado Analítica y Ciencias de Datos (UDC)
+# Modulo 3 SQL - Caso Práctico
 
 Análisis de Ventas del "Restautante Sabores del Mundo"
 
